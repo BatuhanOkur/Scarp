@@ -7,6 +7,7 @@ public class Floor : MonoBehaviour
     // Start is called before the first frame update
     public bool isOnFloor;
     Animator animator;
+    public GameObject character;
     int specialFloorChance,goldenFloorChance;
     float jumpingForce;
     public int addition = 1;
@@ -15,6 +16,7 @@ public class Floor : MonoBehaviour
         animator = GetComponent<Animator>();
         specialFloorChance = Random.Range(1, 11);
         goldenFloorChance = Random.Range(1, 11);
+        character = GameObject.Find("Character");
 
         if (specialFloorChance == 1)
         {
@@ -33,6 +35,15 @@ public class Floor : MonoBehaviour
 
         
     }
+
+    private void Update()
+    {
+        if(character.transform.position.y - gameObject.transform.position.y > 10f)
+        {
+            Destroy(gameObject,.1f);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.relativeVelocity.y < 0)
