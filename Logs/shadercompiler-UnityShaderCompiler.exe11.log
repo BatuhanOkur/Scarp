@@ -2,3 +2,5 @@ Base path: 'C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/
 Cmd: initializeCompiler
 
 Cmd: shutdown
+
+Quitting shader compiler process

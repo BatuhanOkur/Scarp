@@ -11,6 +11,7 @@ public class Floor : MonoBehaviour
     int specialFloorChance,goldenFloorChance;
     float jumpingForce;
     public int addition = 1;
+
     private void Start()
     {
         animator = GetComponent<Animator>();

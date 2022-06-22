@@ -38,12 +38,13 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameScripts\Floor.cs" />
      <Compile Include="Assets\Scripts\ScoreScripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\SoundController.cs" />
      <Compile Include="Assets\Scripts\GameScripts\Manager.cs" />
      <Compile Include="Assets\Scripts\MainMenu\MainManager.cs" />
      <Compile Include="Assets\Scripts\GameScripts\CharacterMovement.cs" />
      <Compile Include="Assets\Scripts\GameScripts\FloorGenerator.cs" />
-     <Compile Include="Assets\Scripts\GameScripts\PowerUp.cs" />
-     <Compile Include="Assets\JumpSound.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\JumpSound.cs" />
+     <Compile Include="Assets\Scripts\GameScripts\PanelOpener.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\2020.3.22f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -14,7 +14,6 @@ public class FloorGenerator : MonoBehaviour
     public float floorWidth;
 
     public float minY, maxY;
-
     private void Start()
     {
         tr = floor.GetComponent<Transform>();
@@ -34,4 +33,6 @@ public class FloorGenerator : MonoBehaviour
             Instantiate(floor, spawnLocation, Quaternion.identity);
         }
     }
+
+
 }
